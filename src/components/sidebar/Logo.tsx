@@ -4,7 +4,7 @@ import type {FC} from "react";
 const Logo: FC = () => {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-      <img src="/src/assets/images/logo/fortebank_logo.png" alt="ForteBank" height={70} />
+      <img src="./../../assets/images/logo/fortebank_logo.png" alt="ForteBank" height={70} />
 
     </div>
   );
