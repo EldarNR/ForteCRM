@@ -2,22 +2,20 @@
   "lang": { "ru": "RU", "kz": "KZ" },
 
   "nav.home": "Басты бет",
-  "nav.applications": "Өтінімдер",
+  "nav.requests": "Өтінімдер",
   "nav.projects": "Жобалар",
   "nav.profile": "Профиль",
   "nav.logout": "Шығу",
-
-  "auth.title": "Авторлану",
-  "auth.welcome": "Қош келдіңіз!",
-  "auth.login": "Логин",
-  "auth.loading": "Жүктелуде",
-  "auth.password": "Құпия сөз",
-  "auth.passwordPlaceholder": "Құпия сөзді енгізіңіз",
-  "auth.remember": "Мені есте сақтау",
-  "auth.forgot": "Құпия сөзді қалпына келтіру",
-  "auth.submit": "Кіру",
-  "auth.recover": "Құпия сөзді қалпына келтіру",
-
+  "login.title": "Авторлану",
+  "login.welcome": "Қош келдіңіз!",
+  "login.login": "Логин",
+  "login.loading": "Жүктелуде",
+  "login.password": "Құпия сөз",
+  "login.passwordPlaceholder": "Құпия сөзді енгізіңіз",
+  "login.remember": "Мені есте сақтау",
+  "login.forgot": "Құпия сөзді қалпына келтіру",
+  "login.submit": "Кіру",
+  "login.recover": "Құпия сөзді қалпына келтіру",
   "apps": {
     "list": "Өтінімдер",
     "textLabel": "Өтінім мәтіні",
@@ -25,15 +23,12 @@
     "delete": "Жою",
     "approve": "Қабылдау"
   },
-
   "common.delete": "Жою",
   "common.accept": "Қабылдау",
   "dashboard.category": "Санат атауы",
   "dashboard.expand": "Кеңейту",
   "form.text": "Өтінім мәтіні",
-
-  "auth.productTagline": "РЕЙТИНГТІК МОДЕЛЬ.",
-
+  "login.productTagline": "РЕЙТИНГТІК МОДЕЛЬ.",
   "projects": {
     "title": "Жобалар",
     "deadline": "Мерзімі",
@@ -42,6 +37,21 @@
       "done": "Дайын",
       "inProgress": "Дамуда",
       "testing": "Тексерілуде"
+    }
+  },
+  "search": {
+    "label": "Іздеу",
+    "placeholder": "Сұранысты енгізіңіз..."
+  },
+  "profile": {
+    "email": "Электрондық пошта",
+    "phone": "Телефон",
+    "joined": "Жобада",
+    "role": {
+      "manager": "Менеджер",
+      "developer": "Әзірлеуші",
+      "designer": "Дизайнер",
+      "tester": "Тестлеуші"
     }
   }
 }

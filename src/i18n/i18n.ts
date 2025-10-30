@@ -1,9 +1,11 @@
+// libraries
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import ru from "./locales/ru/common.json";
-import kz from "./locales/kz/common.json";
+// languages
+import ru from "./../assets/locales/ru.json";
+import kz from "./../assets/locales/kz.json";
 
 void i18n
   .use(LanguageDetector)

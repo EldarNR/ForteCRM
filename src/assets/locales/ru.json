@@ -1,0 +1,57 @@
+{
+  "lang": { "ru": "RU", "kz": "KZ" },
+
+  "nav.home": "Главная",
+  "nav.requests": "Заявки",
+  "nav.projects": "Проекты",
+  "nav.profile": "Профиль",
+  "nav.logout": "Выйти",
+  "login.title": "Авторизация",
+  "login.welcome": "Добро пожаловать!",
+  "login.login": "Логин",
+  "login.loading": "Загрузка",
+  "login.password": "Пароль",
+  "login.passwordPlaceholder": "Введите пароль",
+  "login.remember": "Запомнить меня",
+  "login.forgot": "Восстановить пароль",
+  "login.submit": "Вход",
+  "login.recover": "Восстановить пароль",
+  "apps": {
+    "list": "Заявки",
+    "textLabel": "Текст заявки",
+    "textPlaceholder": "Введите текст заявки",
+    "delete": "Удалить",
+    "approve": "Принять"
+  },
+  "common.delete": "Удалить",
+  "common.accept": "Принять",
+  "dashboard.category": "Название категории",
+  "dashboard.expand": "Развернуть",
+  "form.text": "Текст заявки",
+  "login.productTagline": "РЕЙТИНГОВАЯ МОДЕЛЬ.",
+  "projects": {
+    "title": "Проекты",
+    "deadline": "Дедлайн",
+    "details": "Подробнее",
+    "status": {
+      "done": "Готово",
+      "inProgress": "В разработке",
+      "testing": "Тестирование"
+    }
+  },
+  "search": {
+    "label": "Поиск",
+    "placeholder": "Введите запрос..."
+  },
+  "profile": {
+    "email": "Email",
+    "phone": "Телефон",
+    "joined": "На проекте с",
+    "role": {
+      "manager": "Менеджер",
+      "developer": "Разработчик",
+      "designer": "Дизайнер",
+      "tester": "Тестировщик"
+    }
+  }
+}

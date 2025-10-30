@@ -1,17 +1,21 @@
-import React from "react";
-import LanguageSwitcher from "../../i18n/components/language-switcher/LanguageSwitcher";
-import styles from "./Header.module.css";
-import Search from "./Search";
-import UserAvatar from "./UserAvatar";
+// libraries
+import {type FC, useMemo} from "react";
+import LanguageSwitcher from "./../language/LanguageSwitcher";
 import { useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+// style
+import styles from "./Header.module.css";
+// components
+import Search from "./Search";
+import UserAvatar from "./UserAvatar";
 
-const Header: React.FC = () => {
+
+const Header: FC = () => {
   const { pathname } = useLocation();
   const { t } = useTranslation();
   
-  const titleKey = React.useMemo(() => {
-    if (pathname.startsWith("/applications")) return "nav.applications";
+  const titleKey = useMemo(() => {
+    if (pathname.startsWith("/requests")) return "nav.requests";
     if (pathname.startsWith("/projects"))     return "nav.projects";
     if (pathname.startsWith("/profile"))      return "nav.profile";
     if (pathname.startsWith("/dashboard"))    return "nav.home";

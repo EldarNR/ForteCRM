@@ -1,14 +1,17 @@
+// libraries
+import type {FC} from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Layout from "../components/layout/Layout";
-import AuthPage from "../pages/auth/AuthPage";
-import DashboardPage from "../pages/dashboard/DashboardPage";
-import ApplicationsPage from "../pages/applications/ApplicationsPage";
-import ProfilePage from "../pages/profile/ProfilePage";
-import ProjectsPage from "../pages/projects/ProjectsPage";
+// components
+import Layout from "./../components/layout/Layout";
+import LoginPage from "./../pages/login/LoginPage.tsx";
+import DashboardPage from "./../pages/dashboard/DashboardPage";
+import RequestsPage from "./../pages/requests/RequestsPage.tsx";
+import ProfilePage from "./../pages/profile/ProfilePage";
+import ProjectsPage from "./../pages/projects/ProjectsPage";
+import AuthLayout from "./../components/authleyout/AuthLayout";
 import RequireAuth from "./RequireAuth";
-import AuthLayout from "../components/authleyout/AuthLayout";
 
-const AppRouter: React.FC = () => {
+const AppRouter: FC = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -16,7 +19,7 @@ const AppRouter: React.FC = () => {
         path="/login"
         element={
           <AuthLayout>
-            <AuthPage />
+            <LoginPage />
           </AuthLayout>
         }
       />
@@ -28,7 +31,7 @@ const AppRouter: React.FC = () => {
           }>
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
-          <Route path="applications" element={<ApplicationsPage />} />
+          <Route path="requests" element={<RequestsPage />} />
           <Route path="profile" element={<ProfilePage />} />
           <Route path="projects" element={<ProjectsPage />} />
         </Route>

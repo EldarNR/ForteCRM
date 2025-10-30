@@ -1,9 +1,14 @@
-import React from "react";
+// libraries
+import type { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import { logout } from "../../services/auth"; 
+// helpers
+import {logout} from "./../../helpers/auth.ts";
+import styles from "./Header.module.css";
+import {useTranslation} from "react-i18next";
 
-const UserAvatar: React.FC = () => {
-  const navigate = useNavigate();
+const UserAvatar: FC = () => {
+    const { t } = useTranslation();
+    const navigate = useNavigate();
 
   const handleLogout = () => {
     logout();
@@ -15,21 +20,9 @@ const UserAvatar: React.FC = () => {
       type="button"
       onClick={handleLogout}
       title="Выйти"
-      style={{
-        width: 32,
-        height: 32,
-        borderRadius: 4,
-        border: "1px solid var(--color-gray-300)", 
-        color: "var(--color-gray-300)",
-        background: "transparent",
-        display: "grid",
-        placeItems: "center",
-        fontSize: 16,
-        fontWeight: 600,
-        cursor: "pointer"
-      }}
+      className={styles.btnLogOut}
     >
-      UT
+        {t("nav.logout")}
     </button>
   );
 };

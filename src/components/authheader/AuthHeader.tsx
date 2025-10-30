@@ -1,5 +1,5 @@
 import React from "react";
-import LanguageSwitcher from "../../i18n/components/language-switcher/LanguageSwitcher";
+import LanguageSwitcher from "../language/LanguageSwitcher";
 import styles from "./AuthHeader.module.css";
 import { useTranslation } from "react-i18next";
 import Logo from "../sidebar/Logo";
@@ -12,7 +12,7 @@ const AuthHeader: React.FC = () => {
       <div className={styles.left}>
         <Logo />
         <span className={styles.dot}>|</span>
-        <span className={styles.product}>{t("auth.productTagline")}</span>
+        <span className={styles.product}>{t("login.productTagline")}</span>
       </div>
 
       <div className={styles.right}>

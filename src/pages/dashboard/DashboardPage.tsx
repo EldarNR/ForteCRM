@@ -1,14 +1,16 @@
-import React from "react";
+// libraries
+import type { FC } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
+// components
 import Card from "../../components/ui/card/Card";
+// style
 import styles from "./DashboardPage.module.css";
+// config
+import {ITEMS} from "./config.ts";
 
-const ITEMS = [
-  "Проект_1", "Проект_2", "Проект_3", "Проект_4", "Проект_5"
-];
 
-const DashboardPage: React.FC = () => {
+const DashboardPage: FC = () => {
   const { t } = useTranslation();
 
   return (

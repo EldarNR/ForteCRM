@@ -1,12 +1,15 @@
-import React from "react";
+// libraries
+import {type FC} from "react";
 import { NavLink } from "react-router-dom";
 import { Home, Box, Grid2x2, CircleUserRound, ChevronDown, Menu } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import styles from "./Sidebar.module.css";
+// components
 import Logo from "./Logo";
+// style
+import styles from "./Sidebar.module.css";
 
 
-const Sidebar: React.FC = () => {
+const Sidebar: FC = () => {
   const { t } = useTranslation();
 
   return (
@@ -30,13 +33,13 @@ const Sidebar: React.FC = () => {
           <span className={styles.text}>{t("nav.home")}</span>
         </NavLink>
 
-        <NavLink to="/applications" className={({isActive}) =>
+        <NavLink to="/requests" className={({isActive}) =>
           `${styles.link} ${isActive ? styles.active : ""}`}>
           <Box 
             size={20} 
             className={styles.icon}
           />
-          <span className={styles.text}>{t("nav.applications")}</span>
+          <span className={styles.text}>{t("nav.requests")}</span>
         </NavLink>
 
         <div className={styles.group}>

@@ -2,8 +2,8 @@
 import {type FC, type FormEvent, useState} from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-// services
-import { fakeLogin } from "../../services/auth";
+// helpers
+import { fakeLogin } from "./../../helpers/auth";
 // style
 import styles from "./LoginPage.module.css";
 
