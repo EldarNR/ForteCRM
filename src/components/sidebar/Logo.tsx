@@ -1,11 +1,12 @@
 // libraries
 import type {FC} from "react";
+// images
+import ForteBankLogo from "./../../assets/images/logo/fortebank_logo.png"
 
 const Logo: FC = () => {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-      <img src="./../../assets/images/logo/fortebank_logo.png" alt="ForteBankLogo" height={70} />
-
+      <img src={ForteBankLogo} alt="ForteBankLogo" height={70} />
     </div>
   );
 };
