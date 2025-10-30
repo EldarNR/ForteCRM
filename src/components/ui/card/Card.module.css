@@ -1,0 +1,14 @@
+.card {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+  border-radius: 12px;              
+  padding: 12px;
+  min-height: 120px;                
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+
+.card:hover {
+  border-color: var(--color-secondary-600);
+  cursor: pointer;
+}
+
