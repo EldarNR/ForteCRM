@@ -1,4 +1,5 @@
 // libraries
+import type {FC} from "react";
 import { useTranslation } from "react-i18next";
 // style
 import styles from "./LanguageSwitcher.module.css";
@@ -6,7 +7,7 @@ import styles from "./LanguageSwitcher.module.css";
 type Lang = "kz" | "ru";
 const ORDER: Lang[] = ["kz", "ru"]; 
 
-export const LanguageSwitcher: React.FC = () => {
+export const LanguageSwitcher: FC = () => {
   const { i18n, t } = useTranslation();
   const current = (i18n.resolvedLanguage || i18n.language) as Lang;
 

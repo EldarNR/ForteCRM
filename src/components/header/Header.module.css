@@ -79,3 +79,30 @@
   display: grid;
   cursor: pointer;
 }
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.burgerButton {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: transparent;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--color-primary-800);
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.burgerButton:hover {
+  background: var(--color-gray-100);
+}
+
+.burgerButton:active {
+  transform: scale(0.95);
+}
