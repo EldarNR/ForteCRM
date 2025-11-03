@@ -1,7 +1,7 @@
 // libraries
 import type {FC} from "react";
 // images
-import ForteBankLogo from "./../../assets/images/logo/fortebank_logo.png"
+import ForteBankLogo from "./../../../public/fortebank_logo.png"
 
 const Logo: FC = () => {
   return (
