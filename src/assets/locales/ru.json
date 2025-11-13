@@ -5,7 +5,6 @@
   "nav.requests": "Заявки",
   "nav.projects": "Проекты",
   "nav.profile": "Профиль",
-  "nav.logout": "Выйти",
   "login.title": "Авторизация",
   "login.welcome": "Добро пожаловать!",
   "login.login": "Логин",
@@ -30,6 +29,7 @@
   "form.text": "Текст заявки",
   "login.productTagline": "РЕЙТИНГОВАЯ МОДЕЛЬ.",
   "projects": {
+    "all": "Все проекты",
     "title": "Проекты",
     "deadline": "Дедлайн",
     "details": "Подробнее",
@@ -43,6 +43,16 @@
     "label": "Поиск",
     "placeholder": "Введите запрос..."
   },
+  "allRequests": {
+    "name": "Все заявки",
+    "newRequests": "Новые заявки",
+    "rejectedRequests":"Отклоненные заявки",
+    "search": "Поиск",
+    "numberColumn": "№",
+    "nameColumn": "Имя Фамилия",
+    "textColumn": "Текст заявки",
+    "emptyState": "Заявки не найдены"
+  },
   "profile": {
     "email": "Email",
     "phone": "Телефон",
@@ -53,6 +63,5 @@
       "designer": "Дизайнер",
       "tester": "Тестировщик"
     }
-  },
-  "all": "Все"
+  }
 }

@@ -1,7 +1,8 @@
 // libraries
-import type{ FC,ReactNode} from "react";
+import type { FC, ReactNode } from "react";
 // style
 import styles from "./Card.module.css";
+import { Maximize2 } from "lucide-react";
 
 interface CardProps {
   children: ReactNode;
@@ -11,9 +12,10 @@ interface CardProps {
 
 export const Card: FC<CardProps> = ({ children, className = "", onClick }) => {
   return (
-    <div onClick={onClick} className={`${styles.card} ${className}`}>
-      {children}
-    </div>
+      <div onClick={onClick} className={`${styles.card} ${className}`}>
+        <div className={styles.content}>{children}</div>
+        <Maximize2 className={styles.icon} size={16} />
+      </div>
   );
 };
 

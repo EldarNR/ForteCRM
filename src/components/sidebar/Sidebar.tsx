@@ -74,7 +74,15 @@ const Sidebar: FC<SidebarProps> = ({ isCollapsed, onToggle }) => {
                           `${styles.subLink} ${isActive ? styles.activeSub : ""}`
                       }
                   >
-                    {t('all')}
+                    {t('projects.all')}
+                  </NavLink>
+                  <NavLink
+                      to={`/all-requests`}
+                      className={({ isActive }) =>
+                          `${styles.subLink} ${isActive ? styles.activeSub : ""}`
+                      }
+                  >
+                    {t('allRequests.name')}
                   </NavLink>
                   {MOCK_PROJECTS.map((p) => (
                       <NavLink

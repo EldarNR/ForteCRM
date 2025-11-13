@@ -10,6 +10,7 @@ import ProfilePage from "./../pages/profile/ProfilePage";
 import ProjectsPage from "./../pages/projects/ProjectsPage";
 import AuthLayout from "./../components/authleyout/AuthLayout";
 import RequireAuth from "./RequireAuth";
+import AllRequestsPage from "../pages/requests-list/RequestsListPage.tsx";
 
 const AppRouter: FC = () => {
   return (
@@ -32,6 +33,7 @@ const AppRouter: FC = () => {
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
           <Route path="requests" element={<RequestsPage />} />
+          <Route path="all-requests" element={<AllRequestsPage />}/>
           <Route path="profile" element={<ProfilePage />} />
           <Route path="projects" element={<ProjectsPage />} />
         </Route>

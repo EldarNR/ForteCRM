@@ -5,7 +5,6 @@
   "nav.requests": "Өтінімдер",
   "nav.projects": "Жобалар",
   "nav.profile": "Профиль",
-  "nav.logout": "Шығу",
   "login.title": "Авторлану",
   "login.welcome": "Қош келдіңіз!",
   "login.login": "Логин",
@@ -30,6 +29,7 @@
   "form.text": "Өтінім мәтіні",
   "login.productTagline": "РЕЙТИНГТІК МОДЕЛЬ.",
   "projects": {
+    "all": "Барлық жобалар",
     "title": "Жобалар",
     "deadline": "Мерзімі",
     "details": "Толығырақ",
@@ -38,6 +38,16 @@
       "inProgress": "Дамуда",
       "testing": "Тексерілуде"
     }
+  },
+  "allRequests": {
+    "name": "Барлық өтінімдер",
+    "newRequests": "Жаңа өтінімдер",
+    "rejectedRequests": "Қабылданбаған өтінімдер",
+    "search": "Іздеу",
+    "numberColumn": "№",
+    "nameColumn": "Аты-жөні",
+    "textColumn": "Өтінім мәтіні",
+    "emptyState": "Өтінімдер табылмады"
   },
   "search": {
     "label": "Іздеу",
@@ -53,6 +63,5 @@
       "designer": "Дизайнер",
       "tester": "Тестлеуші"
     }
-  },
-  "all": "Барлығы"
+  }
 }

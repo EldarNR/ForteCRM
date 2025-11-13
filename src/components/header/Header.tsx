@@ -21,6 +21,7 @@ const Header: FC<HeaderProps> = ({ isCollapsed, onToggleSidebar }) => {
 
     const titleKey = useMemo(() => {
         if (pathname.startsWith("/requests")) return "nav.requests";
+        if (pathname.startsWith("/all-requests")) return "nav.requests";
         if (pathname.startsWith("/projects"))     return "nav.projects";
         if (pathname.startsWith("/profile"))      return "nav.profile";
         if (pathname.startsWith("/dashboard"))    return "nav.home";

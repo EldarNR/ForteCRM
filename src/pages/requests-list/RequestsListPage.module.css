@@ -1,0 +1,176 @@
+.wrap {
+    height: 100%;
+    display: flex;
+    background: var(--color-bg);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 100%;
+
+}
+
+.tabs {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+    background: var(--color-white);
+    border-radius: 28px 28px 0px 0px;
+    border: 1px solid var(--color-gray-300);
+    overflow: hidden;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px 20px;
+    background: transparent;
+    border: none;
+    color: var(--color-gray-500);
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab:hover {
+    background: var(--color-gray-100);
+}
+
+.tab.active {
+    background: var(--color-gray-300);
+    color: var(--color-gray-700);
+}
+
+.searchBar {
+    display: flex;
+    justify-content: end;
+    background-color: var(--color-gray-100);
+    padding: 10px 10px 10px 0;
+    margin-bottom: 20px;
+
+}
+
+.searchInput {
+    padding: 12px 16px;
+    border: 1px solid var(--color-gray-300);
+    border-radius: 8px;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: var(--color-white);
+    color: var(--color-gray-700);
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: var(--color-primary);
+}
+
+.searchInput::placeholder {
+    color: var(--color-gray-500);
+}
+
+.requestsList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tableHeader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background: var(--color-white);
+    border-bottom: 4px solid var(--color-gray-300);
+}
+
+.columnTitle {
+    color: var(--color-gray-500);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.columnTitle:nth-child(1) {
+    min-width: 80px;
+    width: 80px;
+}
+
+.columnTitle:nth-child(2) {
+    flex: 1;
+}
+
+.columnTitle:nth-child(3) {
+    width: auto;
+}
+
+.requestCard {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-300);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: box-shadow 0.2s ease;
+}
+
+.requestCard:hover {
+    box-shadow: var(--shadow);
+}
+
+.requestHeader {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 20px;
+    background: var(--color-gray-100);
+    border-bottom: 1px solid var(--color-gray-300);
+}
+
+.requestId {
+    color: var(--color-gray-700);
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 80px;
+}
+
+.requestName {
+    color: var(--color-gray-700);
+    font-weight: 500;
+    font-size: 14px;
+    flex: 1;
+}
+
+.requestLabel {
+    color: var(--color-gray-500);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.requestBody {
+    padding: 20px;
+}
+
+.requestText {
+    color: var(--color-gray-700);
+    line-height: 1.6;
+    font-size: 14px;
+    margin: 0 0 12px 0;
+}
+
+.requestDate {
+    color: var(--color-gray-500);
+    font-size: 13px;
+}
+
+.emptyState {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--color-gray-500);
+    font-size: 16px;
+    background: var(--color-white);
+    border: 1px solid var(--color-gray-300);
+    border-radius: 12px;
+}
