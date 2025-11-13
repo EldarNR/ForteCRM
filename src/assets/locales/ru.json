@@ -48,9 +48,6 @@
     "newRequests": "Новые заявки",
     "rejectedRequests":"Отклоненные заявки",
     "search": "Поиск",
-    "numberColumn": "№",
-    "nameColumn": "Имя Фамилия",
-    "textColumn": "Текст заявки",
     "emptyState": "Заявки не найдены"
   },
   "profile": {

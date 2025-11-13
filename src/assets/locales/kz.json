@@ -44,9 +44,6 @@
     "newRequests": "Жаңа өтінімдер",
     "rejectedRequests": "Қабылданбаған өтінімдер",
     "search": "Іздеу",
-    "numberColumn": "№",
-    "nameColumn": "Аты-жөні",
-    "textColumn": "Өтінім мәтіні",
     "emptyState": "Өтінімдер табылмады"
   },
   "search": {

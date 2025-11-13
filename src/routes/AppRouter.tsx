@@ -32,8 +32,8 @@ const AppRouter: FC = () => {
           }>
           <Route index element={<Navigate to="/dashboard" replace />} />
           <Route path="dashboard" element={<DashboardPage />} />
-          <Route path="requests" element={<RequestsPage />} />
-          <Route path="all-requests" element={<AllRequestsPage />}/>
+          <Route path="requests/:id" element={<RequestsPage />} />
+          <Route path="requests" element={<AllRequestsPage />}/>
           <Route path="profile" element={<ProfilePage />} />
           <Route path="projects" element={<ProjectsPage />} />
         </Route>

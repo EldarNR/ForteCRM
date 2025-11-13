@@ -129,6 +129,7 @@
 }
 
 .subLink {
+  cursor: pointer;
   font-size: 0.9rem;
   color: var(--color-gray-700);
   text-decoration: none;
@@ -143,9 +144,9 @@
 }
 
 .activeSub {
-  color: var(--color-primary-800);
+  color: var(--color-gray-100) ;
   font-weight: 600;
-  background: var(--color-gray-100);
+  background: var(--color-primary-800);
 }
 
 .rotated {
